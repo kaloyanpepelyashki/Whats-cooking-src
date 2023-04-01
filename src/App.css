@@ -1,0 +1,642 @@
+
+  @font-face {
+    font-family:nunito-bold ;
+    src: url(/src/Fonts/nunito.bold.ttf);
+  }
+
+  @font-face {
+    font-family:nunito-extrabold ;
+    src: url(/src/Fonts/nunito.extrabold.ttf);
+  }
+
+  @font-face {
+    font-family:nunito-regular ;
+    src: url(/src/Fonts/nunito.regular.ttf);
+  }
+
+:root {
+    --Magenta: #CA336A;
+    --Light-Magenta:#FF5C8D;
+    --Dark-Magenta: #931C39;
+    --Yellow:#FFEB3B;
+    --Pink:#FFA6A6;
+    --Light-grey:#EDEBEB;
+    --grey2: #D9D9D9;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #000;
+    --text-color-danger: rgb(152, 58, 58);
+    --white: #f1f1f1;
+    --fakeColor: 434343;
+    --background-color1: #CA336A;
+      --fontStyleNormal: font-style: normal;
+      --fontSizeH2font: font-size: 22pt;
+      --fontSizeH3font: font-size: 18pt;
+      --fontSizeBTfont: font-size: 8pt;
+      --fontFamily1: font-family: nunito-regular;
+      --fontWeightNormal: font-weight: normal;
+
+    --h2Font: var(--fontStyleNormal)
+    var(--fontWeightNormal)
+    var(--fontSizeH2font)
+    var(--fontFamily1);
+
+    --h3Font: font-weight: normal; font-size: 18pt; font-family: nunito-regular;
+    --bodyText: var(--fontStyleNormal)
+    var(--fontWeightNormal)
+    var(--fontSizeBTfont)
+    var(--fontFamily1);
+  }
+
+
+
+body {
+    color: var(--text-color-dark);
+    padding: 0;
+    margin: 0;
+    font-family: nunito-regular ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    overflow-x: hidden;
+  }
+
+  h1 {
+  
+    font-family: nunito-extrabold ;
+    font-size: 25px;
+    letter-spacing: 0.1px;
+  }
+  
+  h2 {
+    font-family: nunito-regular ;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  }
+  
+  h3 {
+    font-family:nunito-bold ;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+
+  P {
+    font-family: nunito-regular ;
+    font-size: 14px;
+  }
+ 
+
+  /**** <<===== === ! | THE APP STYLING STARTS HERE | ! === =====>>  ****/
+  /****                                                              ****/
+
+  
+
+  /* <--- --- | NAV-BAR  STYLING | --- ---> */
+
+
+
+  .App-navBar-2 {
+    /**** changing navigation bar
+    /****
+    /* position: absolute; */
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  
+  
+  @media (max-width: 450px){
+  .App-navBar-1 {
+  /**** changing navigation bar
+  /****
+  /* position: absolute; */
+  position: sticky;
+  bottom: 0px;
+  border-top:solid 1px rgb(243, 237, 237);
+  }
+  .App-navBar-2{
+    display: none;
+  } 
+  
+  /***  <==== === ! | SHOPPING LIST / STOCK PAGE | ! === ====>  ***/
+
+
+
+  /* <--- --- | SHOPPING LIST NAVBAR STYLING | --- ---> */
+  
+  
+  .shopping-list-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color1);
+  }
+  .shopping-list-search {
+    width: 79%;
+    margin-top: 80px;
+    padding: 15px 7px;
+    border-radius: 73px;
+    background-color: var(--Light-grey);
+  }
+  .shopping-list-navbar-links-holder {
+     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .shopping-list-navbar-link {
+    width: 40%;
+    text-align: center;
+    font: var(--h2Heading);
+    color: var(--text-color-light);
+    padding: 20px 50px;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column
+  }
+  .MuiTabs-flexContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .css-zx9imm-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: white;
+  }
+
+     /* <--- --- | IN PROFILE TOP BAR STYLING| --- ---> */
+
+
+
+.prof-pic-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 5px;
+  background-color:#ca336a ;
+}
+ .profile-pic{
+  width: 30%;
+  border-radius: 15px;
+ 
+}
+.inProfile-user-name {
+  font-size: 17pt;
+  color: #f1f1f1;
+}
+ .profile-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color1);
+}
+.profile-navbar-links-holder {
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+
+}
+  /* <--- --- | IN PROFILE saved recipes STYLING| --- ---> */
+
+.my-recipe-item-holder {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.delete-button {
+  align-self: flex-end;
+  padding-right: 10px;
+  margin-bottom: -25px;
+  z-index: 2;
+}
+.my-recipe-image{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+
+  
+}
+
+  .my-recipe-item-txt{
+    width: 100%;
+    background-color: #ca336a ;
+    border-radius: 0 0 15px 15px;
+  }
+  .saved-recipe-item-holder {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 70px;
+  }
+  .saved-recipe-items-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+    .saved-recipe-image{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  
+    
+  }
+  
+.saved-recipe-item-txt {
+  width: 100%;
+  background-color: #ca336a ;
+  color: #f1f1f1;
+  font-size: 14pt;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+
+.create-recipe-btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.create-recipe-card-outter{
+  background-color: #ca336a;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.creeate-recipe-icon{
+  text-align: center;
+  font-size: 36pt;
+  color: #f1f1f1; 
+}    
+
+
+
+ /* <--- --- | CREATE NEW RECIPE FORM STYLING | --- ---> */
+
+
+ /* <--- | GO BACK NAV BAR STYLING | ---> */
+
+.go-back-nav-wrapper {
+  width: 98%;
+  height: 50px;
+  position: sticky;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #CA336A;
+  border-radius: 0 0 17px 17px;
+  padding-left: 20px;
+  transition: top 1.3s ease-in-out;
+}
+.go-back-icon {
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+
+
+.create-recipe-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ .logo-pic{
+  width: 20%;
+
+}
+
+.create-recipe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 90%;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-left: 12px;
+  border-radius: 15px;
+}
+label {
+  font: var(--h2Heading);
+  font-size: 17pt;
+}
+.create-recipe-legend-small-text {
+  margin-top: -2px;
+  font: var(--h2Heading);
+  font-size: 10pt;
+}
+.input{
+  width: 95%;
+  border: 0.5px solid #ca336a;
+  border-radius: 15px;
+  padding: 9px;
+
+}
+
+.descriptInput {
+  width: 90%;
+}
+.inputt{
+  width: 65%;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #ca336a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.recipe-specifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.recipe-spec-input {
+  width: 82%;
+
+}
+.create-recipe-commit-btn {
+  width: 40%;
+  font: var(--h2Heading);
+  font-size: 16pt;
+  color: white;
+  background-color: #ca336a;
+  border-radius: 15px;
+  padding: 10px;
+  align-self: center;
+}
+  
+
+ /* <--- --- | LIST PAGES STYLING | --- ---> */
+ 
+  .list-page-wrapper {
+    background-color: #D9D9D9;
+  }
+
+
+   /* <--- - | SHOPPING PAGE STYLING | --- ---> */
+
+
+    /* <---| SHOPPING PAGE ITEM COMPONENT STYLING | ---> */
+    .List-item-outter {
+      width: 90%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #FFFFFF;
+      border-radius: 25px;
+    }
+    .List-item-name-icon {
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   
+    }
+
+
+
+   /***  <==== === ! | IN RECIPE PAGE | ! === ====>  ***/
+
+
+
+  /* <--- --- | IN RECIPE TOP COMPONENT STYLING | --- ---> */
+
+
+
+  .inRecipe-top-component-first-section {
+    display: flex;
+    flex-direction: column;
+        color: var(--text-color-light);
+
+  }
+  .inRecipe-recipe-picture {
+    height: 40%;
+    width: 100%;
+    
+  }
+  .inRecipe-heading-section {
+    z-index: 3;
+    width: 95%;
+    margin-top: -100px;
+    padding: 0px 12px; 
+       background-color: var(--background-color1);
+    border-radius: 25px 25px 0 0;
+  
+  }
+  /* .inRecipe-recipe-name {
+    font: var(--h2Font);
+  } */
+  .inRecipe-rating-save-holder {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .inRecipe-save-recipe {
+    display: flex;
+    flex-direction: row;
+  }
+  .inRecipe-top-component-second-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inRecipe-stats-section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 18px;
+    background-color: white;
+  }
+  .inRecipe-stat-item {
+    display: flex;
+    flex-direction: column;
+    /* font: var(--h3Font);  */
+  }
+
+
+    /* <--- --- | IN RECIPE DESCRIPTION COMPONENT STYLING | --- ---> */
+
+
+  .inRecipe-profile-descript-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+  }
+  .inRecipe-profile-outer {
+    display: flex;
+    flex-direction: row;
+  }
+  .inRecipe-profile-picture {
+    width: 20%;
+    height: 24%;
+  }
+  .inRecipe-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  .InRecipe-name-nationality-holder {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  /* .inRecipe-name {
+    font: var(--h3Font);
+  } */
+  .inRecipe-profile-short-bio {
+    /* font: var(--bodyText); */
+    font-size: 14pt;
+  }
+  /* .inRecipe-description-text {
+    width: 80%;
+  } */
+
+
+      /* <--- --- | IN RECIPE TABS COMPONENT STYLING | --- ---> */
+      .Ingredients-tab-items-holder {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+
+
+         /* <--- | IN RECIPE ING ITEM COMPONENT STYLING | ---> */
+
+    .Ingr-item-outer {
+      width: 80%;
+      padding: 9px 13px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 15px;
+      background-color: #C5FFB0;
+    }
+
+    .ingr-img {
+      width: 10%;
+    }
+    .ingr-name {
+      margin-left: 15px;
+    }
+
+
+    .instr_items_holder {
+      display: flex;
+      flex-direction: column;
+      padding-left: 25px;
+      
+    }
+
+    .instr_item {
+     display: flex;
+    }
+
+
+}
+  
+  /* ---------- nav styling ---------- */
+.nav1, .nav2 {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 9;
+ 
+}
+
+
+
+@media (max-width: 450px){
+.nav1 {
+position: fixed;  
+bottom: 0;
+border-top:solid 1px rgb(243, 237, 237);
+}
+.nav2{
+  display: none;
+ 
+  
+}
+}
+
+
+@media (min-width: 450px){
+.nav2 {
+  top: 0;  
+  font-family:nunito-extrabold ;
+  position: absolute;
+  
+}
+.nav2 a {
+  color: var(--text-color-dark);
+  font-size: 30px;
+}
+.nav1{
+  display: none;
+}
+}
+
+/* Style the links inside the navigation bar */
+.nav1 a, .nav2 a {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+}
+
+@media (max-width: 450px){
+  .nav1 a {
+      font-size: 10px;
+      
+  }
+.nav1{
+  background-color: var(--white);
+}
+
+/* Change the color of links on hover */
+
+}
+.nav1 a:hover {
+  color: var(--Magenta);
+  
+}
+.active  {
+  color: var(--Magenta);
+  
+}
+
+/* Add a color to the active/current link */
+
+  
+  /* Style the links inside the navigation bar */
